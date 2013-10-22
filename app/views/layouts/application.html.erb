@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArteMúsica</title>
+  <!-- Latest compiled and minified CSS -->
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+	<!--Barra de navegación nro1-->
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom:0px;z-index:1000000000000">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    
+    <a class="navbar-brand" href="#" style="margin-left:550px"><img src="logo2-yellow.png" style="width:35px"> ArteMúsica </a>
+   
+
+  </div>
+  
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse navbar-static-top " >
+    
+    
+    <ul class="nav navbar-nav navbar-right ">
+      <li><%= link_to('Registrarse', segundo_path) %></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="casa.png" style="width:30px"></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><img src="logo-face.gif" style="width:20px"> Facebook</a></li>
+          <li><a href="#"><img src="logo-twitter.gif" style="width:20px"> Twitter</a></li>
+          <li><a href="#"><img src="logo-google.gif" style="width:20px"> Google+</a></li>
+          <li><a href="#"><img src="logo-linkedin.gif" style="width:20px"> Linkedin</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<!--TERMINO Barra de navegación nro1-->
+<!--Barra de navegación nro2-->
+
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom:0px;text-align:center">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse" style="align:center" >
+    <ul class="nav navbar-nav" >
+      <li><a>Artes:</a></li>
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Musicales<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Estilo musical</a></li>
+          <li><a href="#">Cantidad integrantes</a></li>
+        </li></ul>
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Escénicas <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">Teatro</a></li>
+          <li><a href="#">Danza</a></li>
+        </ul>
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Plásticas <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Escultura</a></li>
+          <li><a href="#">Arquitectura</a></li>
+        </li></ul>
+     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Visuales <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Fotografía</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Pintura</a></li>
+          <li><a href="#">Dibujo</a></li>
+          <li><a href="#">Grabado</a></li>
+          
+        </li></ul>
+<li><form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" style="width:350px" placeholder="Estilo musical, Banda, Integrante, Disciplina, etc...">
+      </div>
+      <button type="submit" class="btn btn-default"><span class=" glyphicon glyphicon-search"></span></button>
+    </form></li>
+      
+    </ul>
+   
+  </div><!-- /.navbar-collapse -->
+</nav>
+<!--TERMINO Barra de navegación nro2-->
+<%= yield %>
+
+
+
+
+
+</body>
+</html>
